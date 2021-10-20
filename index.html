@@ -21,6 +21,14 @@
         background-color: #0030FF;
       }
     </style>
-<body style="background-color:azure;">
+<script type="text/javascript">
+function returnText(){
+    let input = document.getElementById("userInput").value;
+    document.getElementById('website').setAttribute('src', input)
+}
+</script>
+<body style="background-color:indigo;">
 <img src="https://raw.githubusercontent.com/AlphaBrowse/alphabrowse/main/AlphaBrowseLogo.png" width="320" height="25">
-<embed src="https://bing.com">
+    <input id="userInput" type="text" placeholder="Text">
+    <button onclick="returnText()">Go</button>
+<embed id="website" src="https://bing.com">
