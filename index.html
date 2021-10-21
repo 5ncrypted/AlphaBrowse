@@ -25,10 +25,12 @@
     </style>
 <script type="text/javascript">
 function returnText(){
-    let input = document.getElementById("userInput").value;
+    let input = document.getElementById("omnibar").value;
     document.getElementById('website').setAttribute('src', input)
 }
-input.addEventListener("keyup", function(event) {
+var website = document.getElementById("omnibar");
+      
+website.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
     event.preventDefault();
     document.getElementById("go").click();
@@ -37,7 +39,7 @@ input.addEventListener("keyup", function(event) {
 </script>
 <body style="background-color:royalblue;">
 <img src="https://raw.githubusercontent.com/AlphaBrowse/alphabrowse/main/AlphaBrowseLogo.png" width="320" height="25"> <br>
-    <input id="omnibar" autocomplete="on" style= "font-family: verdana, sans-serif; color: white; background: #013; border-radius: 8px; border: 2px solid #008; padding: 2px; width: 1000px;" id="userInput" type="text" placeholder="">
+    <input id="omnibar" autocomplete="on" style= "font-family: verdana, sans-serif; color: white; background: #013; border-radius: 8px; border: 2px solid #008; padding: 2px; width: 1000px;" type="text" placeholder="">
     <button id="go" hidden style="border: none; background-color: transparent;" onclick="returnText()"><img src="https://raw.githubusercontent.com/AlphaBrowse/alphabrowse.github.io/main/go.png" width="16" height="16"></button>
     <div style="position: absolute; down: 10px; top: 40px;"> 
 </div>
