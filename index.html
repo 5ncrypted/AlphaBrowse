@@ -28,8 +28,9 @@ function returnText(){
     let input = document.getElementById("omnibar").value;
     document.getElementById('website').setAttribute('src', input)
 }
+</script>
+<script type="text/javascript">
 var website = document.getElementById("omnibar");
-      
 website.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
     event.preventDefault();
