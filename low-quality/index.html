@@ -1,0 +1,55 @@
+<!doctype html>
+<title>AlphaBrowse</title>
+<meta name="theme-color" content="#444">
+<meta name="application-name" content="AlphaBrowse Explorer">
+<link rel="icon" href="/AlphaBrowseIconPixel.png" type="image/png">
+
+<style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    
+    html, body {
+      height: 100%;
+      
+      display: flex;
+      flex-direction: column;
+    }
+      body {
+        height: 100vh;
+        width: 100vw;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      embed {
+        flex-grow: 1;
+        width: 100%;
+        padding: 0px;
+        background-color: #FFFFFF;
+      }
+    </style>
+
+<body style="background-color:white;">
+
+<div width="100%" style="background-color:#444">
+   <h3>AlphaBrowse<h3>
+</div>
+<input id="myInput" autocomplete="on" style="width: 100%;" type="text" placeholder="">
+<button hidden id="go" style="border: none; background-color: transparent;" onclick="returnText()">Go</button>
+<embed id="website" src="https://bing.com">
+<script type="text/javascript">
+function returnText(){
+    let input = document.getElementById("myInput").value;
+    document.getElementById('website').setAttribute('src', input)
+}
+
+var website = document.getElementById("myInput");
+website.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("go").click();
+  }
+});
+</script>
