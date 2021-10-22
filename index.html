@@ -2,7 +2,8 @@
 <title>AlphaBrowse</title>
 <meta name="theme-color" content="#008">
 <meta name="application-name" content="AlphaBrowse">
-<link rel="icon" href="https://raw.githubusercontent.com/AlphaBrowse/alphabrowse.github.io/main/AlphaBrowseIcon.png" type="image/png">
+<link rel="icon" href="/AlphaBrowseIcon.png" type="image/png">
+
 <style>
     * {
       padding: 0;
@@ -29,14 +30,15 @@
         background-color: #0030FF;
       }
     </style>
+
 <body style="background-color:blue;">
-<div width="100%" style="background-color:#008"><img src="https://raw.githubusercontent.com/AlphaBrowse/alphabrowse/main/AlphaBrowseLogo.png" width="160" height="12.5"></div>
-<div height="2"></div>
-    <input id="myInput" autocomplete="on" style= "font-family: verdana, sans-serif; color: white; background: #013; border-radius: 8px; border: 2px solid #008; padding: 2px; width: 75%;" type="text" placeholder="">
-    <button hidden id="go" style="border: none; background-color: transparent;" onclick="returnText()"><img src="https://raw.githubusercontent.com/AlphaBrowse/alphabrowse.github.io/main/go.png" width="16" height="16"></button>
-    <div style="position: absolute; down: 10px; top: 40px;"> 
+
+<div width="100%" style="background-color:#008">
+   <img style="background-color:royalblue" src="/AlphaBrowseLogo.png" width="160" height="12.5">
 </div>
-<div height="1"></div>
+<div>
+   <img src="/left.png" onclick="history.go(-1)"><img src="/right.png" onclick="history.go(1)"><input id="myInput" autocomplete="on" style= "font-family: Verdana, sans-serif; color: white; background: #013; border-radius: 8px; border: 2px solid #008; padding: 2px; width: 75%;" type="text" placeholder=""><button hidden id="go" style="border: none; background-color: transparent;" onclick="returnText()"><img src="/go.png" width="16" height="16"></button>
+</div>
 <embed id="website" src="https://bing.com">
 <script type="text/javascript">
 function returnText(){
