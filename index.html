@@ -23,7 +23,7 @@
       * {
         box-sizing: border-box;
       }
-      iframe {
+      embed {
         flex-grow: 1;
         width: 100%;
         padding: 0px;
@@ -38,7 +38,7 @@
 </div>
 <input id="myInput" autocomplete="on" style= "font-family: Verdana, sans-serif; color: white; background: #013; border: 2px solid #008; padding: 2px; width: 100%;" type="text" placeholder="">
 <button hidden id="go" style="border: none; background-color: transparent;" onclick="returnText()"><img src="/go.png" width="16" height="16"></button>
-<iframe id="website" src="https://bing.com">
+<embed id="website" src="https://bing.com">
 <script type="text/javascript">
 function returnText(){
     let input = document.getElementById("myInput").value;
