@@ -2,4 +2,3 @@
 ------------------------------------------------
 
 HTML Browser, sorta...
-[Can't connect to google though](https://google.com)
